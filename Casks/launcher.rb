@@ -12,8 +12,8 @@ cask "launcher" do
 
   # 产物托管在 Cloudflare R2：文件名带版本号，规避 cdn 按文件名缓存导致的「装到旧版本」
   url "https://repo.iskill.site/launcher/Launcher-#{version}-#{arch}.zip"
-  sha256 arm:   "cfe375a28bf4579289b3fd51709b0239eae3ea373dfa9bdafe82cf935ead7976",
-         intel: "a332d18e970022141fe486321480c663be19f3ad7a586780b7614ab8490ed167"
+  sha256 arm:   "a9c17844e35aa787c782fe9611906c3f13c5a44dc351e107c6a6e2c80bf307ca",
+         intel: "e501d6957ad155752ef65e65d97295e422e4d067574ea384d4cc655015c2f597"
 
   name "Launcher"
   desc "macOS local service manager for launchd, crontab and port services"
