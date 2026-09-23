@@ -5,15 +5,15 @@
 # 因此**不要手改 tap 仓库里的那份**——下次发版会被本模板覆盖。
 # 详见同目录 README.md。
 cask "launcher" do
-  version "0.1.1"
+  version "0.1.2"
 
   # 两个架构各自出包（产物名见 electron-builder.yml 的 artifactName），故 url / sha256 按架构分支
   arch arm: "arm64", intel: "x64"
 
   # 产物托管在 Cloudflare R2：文件名带版本号，规避 cdn 按文件名缓存导致的「装到旧版本」
   url "https://repo.iskill.site/launcher/Launcher-#{version}-#{arch}.zip"
-  sha256 arm:   "91f9c127e7aaa5b918384abc2aeba2d7fcc8f2eba903e22fd952617b89b654a0",
-         intel: "2f5f24448748a633fbfc54926f79ef1fd875d126f2d21360bdb5827c7c0aa258"
+  sha256 arm:   "cfe375a28bf4579289b3fd51709b0239eae3ea373dfa9bdafe82cf935ead7976",
+         intel: "a332d18e970022141fe486321480c663be19f3ad7a586780b7614ab8490ed167"
 
   name "Launcher"
   desc "macOS local service manager for launchd, crontab and port services"
